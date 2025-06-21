@@ -1,0 +1,29 @@
+{
+    "__license": "This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.",
+    "manifest_version": 2,
+    "name": "Secret Detector",
+    "version": "2.0",
+    "description": "Detects sensitive information like API keys, tokens, and passwords in web pages.",
+    "permissions": [
+      "activeTab",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>",
+      "storage"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
