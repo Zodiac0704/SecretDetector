@@ -46,14 +46,6 @@ Secret Detector is a browser extension that scans web pages for sensitive inform
 4. Click "Load Temporary Add-on"
 5. Select any file in the extension directory
 
-### Chrome
-
-1. Download the extension files
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable "Developer mode"
-4. Click "Load unpacked"
-5. Select the extension directory
-
 ## Usage
 
 1. **Scanning**: The extension automatically scans web pages you visit
